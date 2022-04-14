@@ -1,4 +1,4 @@
-# 설탕 배달 - 그리디 알고리즘
+# 설탕 배달 - Greedy Algorithm
 
 sugar = int(input())
 bag = 0
