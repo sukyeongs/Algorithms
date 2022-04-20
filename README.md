@@ -13,4 +13,6 @@
 - [4673 - 셀프 넘버](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/4673.py)  
 - [10998 - A x B](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/10998.py)  
 - [10950 - A + B - 3](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/10950.py)
-- [1110 - 더하기 사이클](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1110.py)  
+- [1110 - 더하기 사이클](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1110.py)
+- [10952 - A + B - 5](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/10952.py)
+- 
