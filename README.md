@@ -15,4 +15,7 @@
 - [10950 - A + B - 3](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/10950.py)
 - [1110 - 더하기 사이클](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1110.py)
 - [10952 - A + B - 5](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/10952.py)
-- 
+
+
+## 프로그래머스
+- [92334 - 신고 결과 받기](https://github.com/sukyeongs/Algorithms/blob/main/Programmers/2022_KAKAO_BLIND_RECRUITMENT/92334.py)
