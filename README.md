@@ -18,4 +18,9 @@
 
 
 ## 프로그래머스
+### 2022 KAKAO BLIND RECRUITMENT
 - [92334 - 신고 결과 받기](https://github.com/sukyeongs/Algorithms/blob/main/Programmers/2022_KAKAO_BLIND_RECRUITMENT/92334.py)
+
+
+### 2021 KAKAO BLIND RECRUITMENT
+- [72410 - 신규 아이디 추천](https://github.com/sukyeongs/Algorithms/blob/main/Programmers/2021_KAKAO_BLIND_RECRUITMENT/72410.py)
