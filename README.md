@@ -24,3 +24,7 @@
 
 ### 2021 KAKAO BLIND RECRUITMENT
 - [72410 - 신규 아이디 추천](https://github.com/sukyeongs/Algorithms/blob/main/Programmers/2021_KAKAO_BLIND_RECRUITMENT/72410.py)
+
+
+### 2021 카카오 채용연계형 인턴십
+- [81301 - 숫자 문자열과 영단어](https://github.com/sukyeongs/Algorithms/blob/main/Programmers/2021_카카오_채용연계형_인턴십/81301.py)
