@@ -28,3 +28,4 @@
 
 ### 2021 카카오 채용연계형 인턴십
 - [81301 - 숫자 문자열과 영단어](https://github.com/sukyeongs/Algorithms/blob/main/Programmers/2021_카카오_채용연계형_인턴십/81301.py)
+- [81302 - 거리두기 확인하기](https://github.com/sukyeongs/Algorithms/blob/main/Programmers/2021_카카오_채용연계형_인턴십/81302.py)
