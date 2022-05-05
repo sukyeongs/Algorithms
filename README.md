@@ -6,6 +6,7 @@
 - [1541 - 잃어버린 괄호](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/1541.py)  
 - [2217 - 로프](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/2217.py)  
 - [2839 - 설탕 배달](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/2839.py)  
+- [5585 - 거스름돈](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/5585.py)  
 - [11047 - 동전0](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/11047.py)  
 - [11399 - ATM](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/11399.py)  
 
