@@ -8,6 +8,7 @@
 - [2839 - 설탕 배달](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/2839.py)  
 - [5585 - 거스름돈](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/5585.py)  
 - [10162 - 전자레인지](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/10162.py)  
+- [10610 - 30](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/10610.py)  
 - [11047 - 동전0](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/11047.py)  
 - [11399 - ATM](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/11399.py)  
 - [13305 - 주유소](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/13305.py)  
