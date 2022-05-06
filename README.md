@@ -13,6 +13,9 @@
 - [11399 - ATM](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/11399.py)  
 - [13305 - 주유소](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/13305.py)  
 
+### 완전 탐색(Bruteforce)
+- [2798 - 블랙잭](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/2798.py)  
+
 ### 구현 (Implementation)
 - [1316 - 그룹 단어 체커](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1316.py)  
 - [2439 - 별 찍기(2)](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/2439.py)  
