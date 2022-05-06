@@ -10,6 +10,7 @@
 - [10162 - 전자레인지](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/10162.py)  
 - [11047 - 동전0](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/11047.py)  
 - [11399 - ATM](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/11399.py)  
+- [13305 - 주유소](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/13305.py)  
 
 ### 구현 (Implementation)
 - [1316 - 그룹 단어 체커](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1316.py)  
