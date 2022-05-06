@@ -14,6 +14,7 @@
 - [13305 - 주유소](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Greedy/13305.py)  
 
 ### 완전 탐색(Bruteforce)
+- [2231 - 분해합](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/2231.py)  
 - [2798 - 블랙잭](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/2798.py)  
 
 ### 구현 (Implementation)
