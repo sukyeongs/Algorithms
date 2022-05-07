@@ -19,11 +19,11 @@
 
 
 ### DFS
-- [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/1260.py)  
+- [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/DFS/1260.py)  
 
 
 ### BFS
-- [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/1260.py)  
+- [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/BFS/1260.py)  
 
 
 ### 구현 (Implementation)
