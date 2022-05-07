@@ -24,6 +24,7 @@
 
 ### BFS
 - [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/BFS/1260.py)  
+- [2178 - 미로 탐색](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/BFS/2178.py)  
 
 
 ### 구현 (Implementation)
