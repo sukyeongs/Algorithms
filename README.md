@@ -20,11 +20,13 @@
 
 ### DFS
 - [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/DFS/1260.py)  
+- [2667 - 단지번호 붙이기](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/DFS/2667.py)  
 
 
 ### BFS
 - [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/BFS/1260.py)  
 - [2178 - 미로 탐색](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/BFS/2178.py)  
+- [2667 - 단지번호 붙이기](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/BFS/2667.py)  
 
 
 ### 구현 (Implementation)
