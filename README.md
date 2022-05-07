@@ -17,6 +17,15 @@
 - [2231 - 분해합](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/2231.py)  
 - [2798 - 블랙잭](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/2798.py)  
 
+
+### DFS
+- [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/1260.py)  
+
+
+### BFS
+- [1260 - DFS와 BFS](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Bruteforce/1260.py)  
+
+
 ### 구현 (Implementation)
 - [1316 - 그룹 단어 체커](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1316.py)  
 - [2439 - 별 찍기(2)](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/2439.py)  
