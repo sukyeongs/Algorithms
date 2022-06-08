@@ -39,6 +39,7 @@
 - [10950 - A + B - 3](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/10950.py)
 - [1110 - 더하기 사이클](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1110.py)
 - [10952 - A + B - 5](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/10952.py)
+- [25083 - 새싹](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/25083.py)
 
 
 ## 프로그래머스
