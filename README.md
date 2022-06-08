@@ -34,6 +34,7 @@
 - [1110 - 더하기 사이클](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1110.py)
 - [1316 - 그룹 단어 체커](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/1316.py)  
 - [2439 - 별 찍기(2)](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/2439.py)  
+- [2480 - 주사위 세개](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/2480.py)  
 - [2753 - 윤년](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/2753.py)  
 - [4673 - 셀프 넘버](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/4673.py)  
 - [10998 - A x B](https://github.com/sukyeongs/Algorithms/blob/main/BOJ/Implementation/10998.py)  
