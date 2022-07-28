@@ -1,4 +1,4 @@
-# 리스트 -> 문자열 출력
+# 리스트의 요소들을 하나의 문자열 합쳐 출력
 str_list = ['h', 'e', 'l', 'l', 'o']
 result = "".join(str_list)  # result = "hello"
 
