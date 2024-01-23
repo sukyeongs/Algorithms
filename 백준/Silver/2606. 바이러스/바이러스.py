@@ -8,7 +8,6 @@ edge_cnt = int(sys_input())  # 연결 수
 
 graph = [[] for _ in range(com_cnt + 1)]
 visited = [False] * (com_cnt + 1)
-stack = []
 virus_cnt = 0
 
 for _ in range(edge_cnt):
