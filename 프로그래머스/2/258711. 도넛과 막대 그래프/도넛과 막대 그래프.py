@@ -1,25 +1,30 @@
 def solution(edges):
     answer = [0, 0, 0, 0]
-    connect_info = {}
+    node_info = {}
     
-    for start, end in edges:
-        if start in connect_info:
-            connect_info[start][1] += 1
+    for edge in edges:
+        start, end = edge[0], edge[1]
+        if start in node_info:
+            node_info[start][1] += 1
         else:
-            connect_info[start] = [0, 1]
-        if end in connect_info:
-            connect_info[end][0] += 1
+            node_info[start] = [0, 1]
+            
+        if end in node_info:
+            node_info[end][0] += 1
         else:
-            connect_info[end] = [1, 0]
-    
-    for node, edge_info in connect_info.items():
-        if edge_info[0] == 0 and edge_info[1] >= 2:
-            answer[0] = node
-        if edge_info[0] >= 1 and edge_info[1] == 0:
+            node_info[end] = [1, 0]
+            
+    for key, value in node_info.items():
+        if value[0] == 0 and value[1] >= 2:
+            answer[0] = key
+            continue
+        
+        elif value[0] >= 1 and value[1] == 0:
             answer[2] += 1
-        if edge_info[0] >= 2 and edge_info[1] == 2:
+        
+        elif value[0] >= 2 and value[1] == 2:
             answer[3] += 1
     
-    answer[1] = connect_info[answer[0]][1] - answer[2] - answer[3]
+    answer[1] = node_info[answer[0]][1] - answer[2] - answer[3]
     
     return answer
