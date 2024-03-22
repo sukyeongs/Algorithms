@@ -1,39 +1,56 @@
-def can_build(answer):
-    for x, y, a in answer:
-        # 기둥
-        if a == 0:
-            if (y != 0 and
-                [x, y - 1, 0] not in answer and
-                [x - 1, y, 1] not in answer and
-                [x, y, 1] not in answer):
-                return False
-        # 보
-        else:
-            if ([x, y - 1, 0] not in answer and
-                [x + 1, y - 1, 0] not in answer and
-                ([x - 1, y, 1] not in answer or 
-                 [x + 1, y, 1] not in answer)
-               ):
-                return False
-    return True
-        
+def check(x, y, n):
+    if 0 <= x < n and 0 <= y < n:
+        return True
+    else:
+        return False
 
+    
 def solution(n, build_frame):
     answer = []
+    graph = [[-1] * n for _ in range(n)]
     
-    for x, y, a, b in build_frame:
-        # 삭제인 경우
-        if b == 0:
-            answer.remove([x, y, a])
-            # 조건 성립 안 되면 다시 추가
-            if not can_build(answer):
-                answer.append([x, y, a])
-        # 추가인 경우
+    for build in build_frame:
+        x, y, a, b = build[0], build[1], build[2], build[3]
+        
+        if not check(x, y, n):
+            continue
+        
+        # 기둥
+        if a == 0:
+            # 기둥 삭제
+            if b == 0:
+                if y + 1 > n and (graph[x][y+1] == -1 or (x + 1 < n and ((graph[x+1][y+1] == 1 and graph[x][y] == 0) or graph[x+1][y+1] == 0 and graph[x][y+1] == 1))):
+                                  graph[x][y] = -1
+                else:
+                    continue
+
+            # 기둥 설치
+            else:
+                if y == 0 or (x+1 < n and graph[x+1][y] == 1) or (x-1 >= 0 and graph[x-1][y] == 1) or (y-1 >= 0 and graph[x][y-1] == 0):
+                    graph[x][y] = 0
+                else:
+                    continue
+        # 보
         else:
-            answer.append([x, y, a])
-            # 조건 성립 안 되면 다시 삭제
-            if not can_build(answer):
-                answer.remove([x, y, a])
+            # 보 삭제
+            if b == 0:
+                if (x+1 < n and graph[x+1][y] == 0) or (x+1 < n and x-1 >= 0 and graph[x+1][y] == 1 and graph[x-1][y] == 1):
+                    continue
+                else:
+                    graph[x][y] = -1
+
+            # 보 설치
+            else:
+                if ((y - 1 >= 0 and graph[x][y-1] == 0) or (x + 1 < n and y - 1 >= 0 and graph[x+1][y-1] == 0) or (x - 1 >= 0 and x + 1 < n and graph[x-1][y] == 1 and graph[x+1][y] == 1)):
+                    graph[x][y] = 1
+                else:
+                    continue          
     
-    answer.sort(key = lambda x: (x[0], x[1], x[2]))
+    for i in range(n):
+        for j in range(n):
+            if graph[i][j] == -1:
+                continue
+            else:
+                answer.append([i, j, graph[i][j]])
+
     return answer
