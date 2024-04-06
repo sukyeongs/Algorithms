@@ -6,12 +6,9 @@ class Solution {
         Arrays.sort(citations);
         int n = citations.length;
         
-        for(int h = 0; h < n; h++) {
-            int hIndex = n - h;
-            if (citations[h] >= hIndex) {
-                answer = hIndex;
-                break;
-            }
+        for(int i = 0; i < n; i++) {
+            int smaller = Math.min(citations[i], n - i);
+            answer = Math.max(answer, smaller);
         }
         
         return answer;
