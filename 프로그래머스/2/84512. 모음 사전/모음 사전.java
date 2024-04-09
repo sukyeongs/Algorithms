@@ -8,15 +8,7 @@ class Solution {
         int answer = 0;
         dfs("", 0);
         
-        for(int i = 0; i < dict.size(); i++) {
-            if (dict.get(i).equals(word)) {
-                System.out.println(i);
-                answer = i;
-                break;
-            }
-        }
-        
-        return answer;
+        return dict.indexOf(word);
     }
     
     void dfs(String str, int len) {
