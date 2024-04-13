@@ -7,27 +7,27 @@ class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
         ArrayList<Integer> answer = new ArrayList<>();
         
-        Queue<Integer> progress = new LinkedList<>();
-        Queue<Integer> speed = new LinkedList<>();
+        Queue<Integer> progressQueue = new LinkedList<>();
+        Queue<Integer> speedQueue = new LinkedList<>();
         
-        for(int i = 0; i < progresses.length; i++) {
-            progress.add(progresses[i]);
-            speed.add(speeds[i]);
-        }
+        for(int progress: progresses) progressQueue.add(progress);
+        for(int speed: speeds) speedQueue.add(speed);
         
-        int cnt = 0;
         int day = 0;
-        while (!progress.isEmpty()) {
-            if(progress.peek() + day * speed.peek() >= 100) {
-                progress.remove();
-                speed.remove();
+        int cnt = 0;
+        while(!progressQueue.isEmpty()) {
+            if (progressQueue.peek() + day * speedQueue.peek() >= 100) {
+                progressQueue.remove();
+                speedQueue.remove();
                 cnt++;
             } else {
-                if (cnt != 0) { 
+                if (cnt != 0) {
                     answer.add(cnt);
+                    day++;
                     cnt = 0;
+                } else {
+                    day++;
                 }
-                day++;
             }
         }
         
