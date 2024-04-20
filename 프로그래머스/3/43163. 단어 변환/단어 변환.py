@@ -8,7 +8,6 @@ def dfs(words, target, visited, cur, depth):
     if (cur == target):
         if answer == 0 or answer > depth:
             answer = depth
-
         return
     
     if (len(words) == depth and cur != target):
