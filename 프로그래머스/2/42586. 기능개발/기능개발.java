@@ -10,24 +10,23 @@ class Solution {
         Queue<Integer> progressQueue = new LinkedList<>();
         Queue<Integer> speedQueue = new LinkedList<>();
         
-        for(int progress: progresses) progressQueue.add(progress);
-        for(int speed: speeds) speedQueue.add(speed);
+        for (int progress : progresses) progressQueue.add(progress);
+        for (int speed : speeds) speedQueue.add(speed);
         
-        int day = 0;
         int cnt = 0;
-        while(!progressQueue.isEmpty()) {
-            if (progressQueue.peek() + day * speedQueue.peek() >= 100) {
+        int day = 0;
+        
+        while (!progressQueue.isEmpty()) {
+            if (progressQueue.peek() + speedQueue.peek() * day >= 100) {
+                cnt ++;
                 progressQueue.remove();
                 speedQueue.remove();
-                cnt++;
             } else {
-                if (cnt != 0) {
+                if (cnt > 0) {
                     answer.add(cnt);
-                    day++;
                     cnt = 0;
-                } else {
-                    day++;
                 }
+                day++;
             }
         }
         
