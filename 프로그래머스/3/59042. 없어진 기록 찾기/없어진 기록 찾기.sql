@@ -1,0 +1,7 @@
+-- 입양 간 기록은 있으나 보호소에 들어온 기록은 없는 동물의 ID, 이름
+SELECT O.ANIMAL_ID, O.NAME
+FROM ANIMAL_OUTS O
+EXCEPT
+SELECT I.ANIMAL_ID, I.NAME
+FROM ANIMAL_INS I
+;
