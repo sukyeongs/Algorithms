@@ -3,11 +3,10 @@ import java.util.*;
 class Solution {
     public int solution(int[] scoville, int K) {
         int answer = 0;
-        
         PriorityQueue<Integer> heap = new PriorityQueue<>();
         
-        for(int s : scoville) heap.add(s);
-
+        for (int s : scoville) heap.add(s);
+        
         while (!heap.isEmpty()) {
             if (heap.peek() >= K) break;
             if (heap.size() == 1 && heap.peek() < K) {
