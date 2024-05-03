@@ -1,28 +1,37 @@
-from collections import deque, Counter
-
 answer = 0
 
-def dfs(words, target, visited, cur, depth):
+def dfs(cur, target, words, visited, depth):
     global answer
-
-    if (cur == target):
+    # 일치하는 경우 depth return
+    if cur == target:
         if answer == 0 or answer > depth:
             answer = depth
         return
     
-    if (len(words) == depth and cur != target):
+    # 일치하지 않는데 모든 단어를 탐색한 경우 0 return
+    if depth == len(words):
         answer = 0
         return
-
-    for index, word in enumerate(words):
-        if (visited[index] == 0 and len(Counter(word) - Counter(cur)) == 1):
-            visited[index] = 1
-            dfs(words, target, visited, word, depth + 1)
-            visited[index] = 0
+    
+    # 아직 전체 단어 순회를 하지 않은 경우, 차이가 1인 단어로 변경
+    for i in range(len(words)):
+        if calc_diff(cur, words[i]) == 1 and visited[i] == False:
+            visited[i] = True
+            dfs(words[i], target, words, visited, depth + 1)
+            visited[i] = False
 
             
-def solution(begin, target, words):    
-    visited = [0] * len(words)
-    dfs(words, target, visited, begin, 0)
+def calc_diff(word1, word2):
+    cnt = 0
+    for i in range(len(word1)):
+        if word1[i] != word2[i]:
+            cnt += 1
+    return cnt
+    
+
+def solution(begin, target, words):  
+    global answer
+    visited = [False] * len(words)
+    dfs(begin, target, words, visited, 0)
     
     return answer
