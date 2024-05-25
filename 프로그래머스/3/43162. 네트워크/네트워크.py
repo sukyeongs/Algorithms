@@ -1,26 +1,32 @@
-def dfs(graph, visited, v):
-    visited[v] = True
+from collections import deque
+
+def bfs(graph, visited, v):
+    queue = deque()
+    queue.append(v)
     
-    for node in graph[v]:
-        if not visited[node]:
-            visited[node] = True
-            dfs(graph, visited, node)
-            
+    while queue:
+        node = queue.popleft()
+        for next in graph[node]:
+            if not visited[next]:
+                queue.append(next)
+                visited[next] = True
+    
     return visited
     
+
 def solution(n, computers):
     answer = 0
-    visited = [False] * n
-    graph = [[] * n for _ in range(n)]
     
+    graph = [[] * n for _ in range(n)]
     for i in range(n):
         for j in range(n):
-            if computers[i][j] == 1 and i != j:
+            if i != j and computers[i][j] == 1:
                 graph[i].append(j)
     
+    visited = [False] * n
     for i in range(n):
         if not visited[i]:
-            visited = dfs(graph, visited, i)
+            visited = bfs(graph, visited, i)
             answer += 1
-        
+    
     return answer
